@@ -1,0 +1,27 @@
+\usepackage{url, graphicx, deluxetable}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{multirow}
+
+\ifthesisdraft
+	\usepackage[ps2pdf, bookmarks,pagebackref, hyperindex, linktocpage, hyperfootnotes, colorlinks, bookmarksopen, bookmarksnumbered, pdftitle={The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey}, pdfauthor={Francis T. O'Donovan}]{hyperref} 
+\else
+	\usepackage[ps2pdf, bookmarks,hyperindex, linktocpage, hyperfootnotes, bookmarksopen, bookmarksnumbered, pdfauthor={Francis T. O'Donovan}, pdftitle={The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey}]{hyperref} 
+\fi
+
+\include{mycommands}
+
+\newcommand\CFNA{\footnote{This chapter has been published previously as \citealt{ODonovan_Charbonneau_Torres:apj:2006a}, ApJ, 644, 1237.}}
+\newcommand\CFNB{\footnote{This chapter has been published previously as \citealt{ODonovan_Charbonneau_Alonso:apj:2007a}, ApJ, 662, 658.}}
+\newcommand\CFNC{\footnote{This chapter has been published previously as \citealt{ODonovan_Charbonneau_Mandushev:apjl:2006a}, ApJL, 651, L61.}}
+\newcommand\CFND{\footnote{This chapter has been published previously as \citealt{ODonovan_Charbonneau_Bakos:apjl:2007a}, ApJL, 663, L37.}} 
+\newcommand\CFNE{%
+%\footnote{This chapter has been submitted to the Astrophysical Journal.}%
+} 
+\newcommand\CFNF{%
+%\footnote{This chapter has been submitted to the Astrophysical Journal.}%
+} 
+\newcommand\CFNG{\footnote{This chapter has been accepted by the Astrophysical Journal Letters as Mandushev, O'Donovan, et al.~\citeyear{Mandushev_ODonovan_Charbonneau:preprint:2007a}.}} 
+
+\renewcommand{\descriptionlabel}[1]%
+	{\hspace{1cm}\textrm{#1}}
