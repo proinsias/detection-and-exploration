@@ -21,7 +21,7 @@
 # *.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
+#*.bbl
 *.bcf
 *.blg
 *-blx.aux
@@ -178,3 +178,5 @@ TSWLatexianTemp*
 *~[0-9]*
 
 
+DetectionAndExploration.pdf
+DetectionAndExploration.ps
