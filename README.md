@@ -9,7 +9,7 @@ _arXiv:_ http://arxiv.org/abs/1407.7502
 -->
 
 _Mirrors:_ 
-- http://resolver.caltech.edu/CaltechETD:etd-08272007-043911
+- <http://resolver.caltech.edu/CaltechETD:etd-08272007-043911>
 
 _Contact:_ Francis T. O'Donovan ([@francisodonovan](https://twitter.com/francisodonovan/), <francis.odonovan@gmail.com>)
 
