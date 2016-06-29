@@ -11,7 +11,7 @@ _arXiv:_ http://arxiv.org/abs/1407.7502
 _Mirrors:_ 
 - http://resolver.caltech.edu/CaltechETD:etd-08272007-043911
 
-_Contact:_ Francis T. O'Donovan ([@francisodonovan](https://twitter.com/francisodonovan), <francis.odonovan@gmail.com>)
+_Contact:_ Francis T. O'Donovan ([@francisodonovan](https://twitter.com/francisodonovan/), <francis.odonovan@gmail.com>)
 
 Please cite using the following BibTex entry:
 
@@ -72,3 +72,11 @@ recovery rate of my visual analysis to be 87% for those transit
 candidates that had a sufficiently high signal-to-noise ratio to be
 flagged by my transit-search algorithm and readily identifiable by
 eye.
+
+---
+
+Many thanks to [@glouppe](https://twitter.com/glouppe/) for
+inspiration and README template from his
+[thesis](https://github.com/glouppe/phd-thesis).
+
+
