@@ -1,4 +1,4 @@
-The detection and exploration of planets from the Trans-atlantic Exoplanet Survey
+The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey
 ============================
 
 PhD dissertation, Francis T. O'Donovan, June 2008. Defended on 31
@@ -17,7 +17,7 @@ Please cite using the following BibTex entry:
 
 ```
 @phdthesis{odonovan2007detection,
-  title={The detection and exploration of planets from the Trans-atlantic Exoplanet Survey},
+  title={The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey},
   author={{O'Donovan}, F.~T.},
   school={California Institute of Technology},
   year=2008,
