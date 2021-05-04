@@ -1,17 +1,15 @@
-The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey
-============================
+# The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey
 
 PhD dissertation, Francis T. O'Donovan, June 2008. Defended on 31
-July 2007. 
+July 2007.
 
-<!-- 
-_arXiv:_ http://arxiv.org/abs/1407.7502
--->
+_Source:_ <http://resolver.caltech.edu/CaltechETD:etd-08272007-043911>
 
-_Mirrors:_ 
-- <http://resolver.caltech.edu/CaltechETD:etd-08272007-043911>
+_Mirrors:_
 
-_Contact:_ Francis T. O'Donovan ([@francisodonovan](https://twitter.com/francisodonovan/), <francis.odonovan@gmail.com>)
+- https://github.com/proinsias/detection-and-exploration/blob/master/pdf/DetectionAndExploration.pdf
+
+_Contact:_ Check out my [webpage](https://proinsias.github.io/about/) for contact details.
 
 Please cite using the following BibTex entry:
 
@@ -24,17 +22,18 @@ Please cite using the following BibTex entry:
   month=06,
 }
 ```
-<!--
-  note={arXiv:1407.7502} 
--->
 
----
+[![Cron Jobs](https://github.com/proinsias/detection-and-exploration/workflows/Cron%20Jobs/badge.svg)](https://github.com/proinsias/detection-and-exploration/actions/workflows/cronjobs.yml)
+[![Pull Requests & Pushes](https://github.com/proinsias/detection-and-exploration/workflows/Pull%20Requests%20%26%20Pushes/badge.svg)](https://github.com/proinsias/detection-and-exploration/actions/workflows/pull-requests-and-pushes.yml)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+______________________________________________________________________
 
 I present the discovery of three transiting planets (TrES-2, TrES-3,
 and TrES-4) of nearby bright stars made with the ten-centimeter
 telescope Sleuth as part of the Trans-atlantic Exoplanet Survey
 (TrES). TrES-2 is the first transiting exoplanet detected in the field
-of view of NASA’s Kepler mission. Of the 20 known transiting
+of view of NASA's Kepler mission. Of the 20 known transiting
 exoplanets, TrES-3 has the second shortest period, facilitating the
 study of orbital decay and atmospheric evaporation. Its
 visible/infrared brightness makes TrES-3 an ideal target for
@@ -43,7 +42,7 @@ largest radius and lowest density of the known transiting
 planets. These three planets have radii larger than that of Jupiter,
 and the radius of TrES-4 significantly exceeds predictions from models
 of hot Jupiters, indicating a possible lack of an energy source in
-these models. 
+these models.
 
 I present the results of Spitzer observations of TrES-2. I reject
 tidal dissipation of eccentricity as an explanation for the inflated
@@ -73,10 +72,8 @@ candidates that had a sufficiently high signal-to-noise ratio to be
 flagged by my transit-search algorithm and readily identifiable by
 eye.
 
----
+______________________________________________________________________
 
 Many thanks to [@glouppe](https://twitter.com/glouppe/) for
 inspiration and README template from his
 [thesis](https://github.com/glouppe/phd-thesis).
-
-
