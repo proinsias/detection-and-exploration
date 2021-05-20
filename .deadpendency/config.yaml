@@ -1,0 +1,6 @@
+---
+
+additional-dependency-files:
+
+  - type: pip-requirements-txt
+    path: requirements-dev.txt
