@@ -3,12 +3,6 @@
 PhD dissertation, Francis T. O'Donovan, June 2008. Defended on 31
 July 2007.
 
-_Source:_ <http://resolver.caltech.edu/CaltechETD:etd-08272007-043911>
-
-_Mirrors:_
-
-- https://github.com/proinsias/detection-and-exploration/blob/master/pdf/DetectionAndExploration.pdf
-
 _Contact:_ Check out my [webpage](https://proinsias.github.io/about/) for contact details.
 
 Please cite using the following BibTex entry:
