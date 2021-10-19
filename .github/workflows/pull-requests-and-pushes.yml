@@ -14,27 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: alex
-        uses: reviewdog/action-alex@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          # Change reviewdog reporter if you need [github-pr-check,github-check,github-pr-review].
-          reporter: github-pr-review
-          # Change reporter level if you need.
-          # GitHub Status Check won't become failure with warning.
-          level: warning
-
       - name: markdownlint
         uses: reviewdog/action-markdownlint@v0.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-
-      - name: misspell
-        uses: reviewdog/action-misspell@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          locale: "US"
 
       # - name: pre-commit
       #   uses: pre-commit/action@v2.0.2
