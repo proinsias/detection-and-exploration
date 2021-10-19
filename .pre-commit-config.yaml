@@ -40,12 +40,12 @@ repos:
   # Git
 
   - repo: https://github.com/jorisroovers/gitlint
-    rev: v0.15.1
+    rev: v0.16.0
     hooks:
       - id: gitlint
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.5.0
+    rev: 0.5.1
     hooks:
       - id: check-github-workflows
 
