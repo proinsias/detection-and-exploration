@@ -180,3 +180,7 @@ TSWLatexianTemp*
 
 DetectionAndExploration.pdf
 DetectionAndExploration.ps
+
+
+megalinter-reports/
+report/
