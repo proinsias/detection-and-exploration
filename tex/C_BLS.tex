@@ -30,7 +30,7 @@ Assume we have a time series phased using a trial period $P_{i}$.
 Let us denote the folded time series by $\{ \hat{x}_{i} \}, i=1,2,\ldots,n$.
 Each data point $\hat{x}_{i}$ has an associated uncertainty $\sigma_{i}$, and a corresponding weight
 \begin{eqnarray*}
-\hat{w}_{i} & = & \left( \sigma_{i}^{2} \sum_{j=1}^{n} \frac{1}{\sigma_{j}^{2}} \right)^{-1}.
+\hat{w}_{i} & = & \left( \sigma_{i}^{2} \sum_{j=1}^{n} \frac{1}{\sigma_{j}^{2}} \right)^{-1}.% chktex 3
 \end{eqnarray*}
 Now suppose that in-transit occurs in the bins $(i_{1}, i_{2})$, under the condition that $q = (i_{2} - i_{1})/n_{b}$ lies within the above range. Define
 \begin{eqnarray*}
@@ -43,18 +43,18 @@ s(i_{1},i_{2}) & = & \sum_{i=i_{1}}^{i_{2}} \hat{w}_{i} \hat{x}_{i},
 i.e., the weighted sum of the in-transit data.
 The Signal Residue (SR) of the time series for $P_{i}$ is then defined as
 \begin{eqnarray*}
-\mathrm{SR} & = & \mathrm{MAX} \left\{ \left[ \frac{s^{2}(i_{1},i_{2})}{r(i_{1},i_{2})[1-r(i_{1},i_{2})]} \right]^{\frac{1}{2}} \right\}.
+\mathrm{SR} & = & \mathrm{MAX} \left\{ \left[ \frac{s^{2}(i_{1},i_{2})}{r(i_{1},i_{2})[1-r(i_{1},i_{2})]} \right]^{\frac{1}{2}} \right\}.% chktex 3
 \end{eqnarray*}
 
-The least-squares best-fit for the time series is then computed by finding the period $\hat{P}$ that maximizes SR.
-The largest Signal Residue, $\hat{\mathrm{SR}}$, has associated in-transit bins $(\hat{i}_{1}, \hat{i}_{2})$.
+The least-squares best-fit for the time series is then computed by finding the period $\hat{P}$ that maximizes SR.\@
+The largest Signal Residue, $\hat{\mathrm{SR}}$, has associated in-transit bins $(\hat{\imath}_{1}, \hat{\imath}_{2})$.
 The best-fit transit depth $\hat{\delta}$ can then be derived using
 \begin{eqnarray*}
-\hat{\delta} = \frac{\hat{\mathrm{SR}}}{\sqrt{r(\hat{i}_{1}, \hat{i}_{2})[1-r(\hat{i}_{1}, \hat{i}_{2})]}}.
+\hat{\delta} = \frac{\hat{\mathrm{SR}}}{\sqrt{r(\hat{\imath}_{1}, \hat{\imath}_{2})[1-r(\hat{\imath}_{1}, \hat{\imath}_{2})]}}.
 \end{eqnarray*}
-The best-fit ingress phase is $ \hat{i}_{1}/n_{b}$, and the best-fit fractional transit duration is
+The best-fit ingress phase is $ \hat{\imath}_{1}/n_{b}$, and the best-fit fractional transit duration is
 \begin{eqnarray*}
-\hat{q} & = & \frac{\hat{i}_{2} - \hat{i}_{1}}{n_{b}}.
+\hat{q} & = & \frac{\hat{\imath}_{2} - \hat{\imath}_{1}}{n_{b}}.
 \end{eqnarray*}
 
 Once we have derived the best fit for a given time series, we can compute for that time series the Signal Detection Efficiency (SDE)
@@ -62,4 +62,4 @@ Once we have derived the best fit for a given time series, we can compute for th
 \mathrm{SDE} & = &(\hat{\mathrm{SR}}\ - <\mathrm{SR}>)/\sigma(\mathrm{SR}),
 \end{eqnarray*}
 where $<\mathrm{SR}>$ and $\sigma(\mathrm{SR})$ are the average and standard deviation, respectively, of the Signal Residue over the period range tested.
-The SDE can then be used as a comparative measure of the strengths of the transit detections in a sequence of time series, such as the photometry from TrES.
+The SDE can then be used as a comparative measure of the strengths of the transit detections in a sequence of time series, such as the photometry from TrES.\@

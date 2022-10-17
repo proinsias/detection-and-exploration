@@ -1,15 +1,15 @@
 \documentclass[defended, 11pt]{new_cit_thesis}
-\newif\iflulu
-\lulutrue
+\newif\iflulu\
+\lulutrue\
 
 \input{Z_NewCommands}
 
-\iflulu
+\iflulu\
     \usepackage{geometry}
     \geometry{papersize={6in,9in},total={5in,8in}}
-    \topmargin -0.65in
-    \singlespacing
-\fi
+    \topmargin\ -0.65in
+    \singlespacing\
+\fi\
 
 \degreeaward{Doctor of Philosophy}               % Degree to be awarded
 \university{California Institute of Technology}   % Institution name
@@ -17,11 +17,11 @@
 \unilogo{cit_logo}                                 % Institution logo
 \copyyear{2008}                             % Year on diploma
 
-\ifthesisdefended
+\ifthesisdefended\
     \date{July 31, 2007}                           % Date of defense
-\else
+\else\
     \date{July 16, 2007}                              % Date of submission
-\fi
+\fi\
 
 \pubnum{}                                        % Publication number
 
@@ -31,19 +31,19 @@
 
 \begin{document}
 
-\maketitle
+\maketitle\
 
 \begin{frontmatter}
-\makecopyright            % copyright page, required by Caltech
-\makededication           % optional dedication
+\makecopyright\            % copyright page, required by Caltech
+\makededication\           % optional dedication
 
 \include{0_1_Acknowledgements}
 
 \include{0_2_Abstract}
 
-\tableofcontents
+\tableofcontents\
 
-\listoffigures
+\listoffigures\
 
 \end{frontmatter}
 
@@ -73,7 +73,7 @@
 
 \end{appendix}
 
-\let\oldbibliography\thebibliography
+\let\oldbibliography\thebibliography\
 \renewcommand{\thebibliography}[1]{%
   \oldbibliography{#1}%
 \addcontentsline{toc}{chapter}{Bibliography}
