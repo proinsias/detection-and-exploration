@@ -7,7 +7,7 @@ _Contact:_ Check out my [webpage](https://proinsias.github.io/about/) for contac
 
 Please cite using the following BibTex entry:
 
-```
+```bibtex
 @phdthesis{odonovan2007detection,
   title={The Detection and Exploration of Planets from the Trans-atlantic Exoplanet Survey},
   author={{O'Donovan}, F.~T.},
@@ -21,7 +21,7 @@ Please cite using the following BibTex entry:
 [![Pull Requests & Pushes](https://github.com/proinsias/detection-and-exploration/workflows/Pull%20Requests%20%26%20Pushes/badge.svg)](https://github.com/proinsias/detection-and-exploration/actions/workflows/pull-requests-and-pushes.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-______________________________________________________________________
+---
 
 I present the discovery of three transiting planets (TrES-2, TrES-3,
 and TrES-4) of nearby bright stars made with the ten-centimeter
@@ -66,7 +66,7 @@ candidates that had a sufficiently high signal-to-noise ratio to be
 flagged by my transit-search algorithm and readily identifiable by
 eye.
 
-______________________________________________________________________
+---
 
 Many thanks to [@glouppe](https://twitter.com/glouppe/) for
 inspiration and README template from his

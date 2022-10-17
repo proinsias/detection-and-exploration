@@ -1,10 +1,9 @@
+% chktex-file 44
 \chapter[Transiting Exoplanets]%
 {%
-Transiting Exoplanets}
-\label{cha:intro}
+Transiting Exoplanets}\label{cha:intro}
 
-\section{The Search for Other Worlds Using Starlight}
-\label{cha:intro:sec:search}
+\section{The Search for Other Worlds Using Starlight}\label{cha:intro:sec:search}
 
 Astronomy in the 21st century has seen significant progress made in the age-old question of our uniqueness in the universe.
 Less than two decades since the first discoveries of planetary-mass systems around stars other than our Sun \citep{Latham_Stefanik_Mazeh:nat:1989a, Wolszczan_Frail:nat:1992a, Mayor_Queloz:nat:1995a}, we now know of 200 planetary systems, and the rate of new discoveries is increasing.
@@ -19,20 +18,18 @@ With each new discovery, we make another step toward the detection of a solar sy
 Before continuing, it should be noted that a distinction is made---by the International Astronomical Union (IAU), if not by nature---between different types of stellar companions that are thereby segregated by mass.
 The evolution of celestial objects that fuse \textit{hydrogen} in their cores is quite different from the evolution of objects without this fusion.
 Hence, only the \textit{hydrogen}-burning bodies (those that have at least 80 times the mass, \mjup, of Jupiter) are called \textit{stars}.
-Objects that are less massive than stars, yet can fuse \textit{deuterium} in their cores, are known as {\it brown dwarfs}, and have masses greater than 13\,\mjup.
-Finally, the least massive stellar companions are {\it planets}.
+Objects that are less massive than stars, yet can fuse \textit{deuterium} in their cores, are known as {\textit brown dwarfs}, and have masses greater than 13\,\mjup.
+Finally, the least massive stellar companions are {\textit planets}.
 The latter are the target of my survey, and the planets found during this thesis work have masses $\mp\sim\mjup$, well below the 13\,\mjup\ limit, hence different interpretations of the mass boundaries will not affect my results.
 
-\section{Methods for Detecting Hot Jupiters and Other Exoplanets}
-\label{cha:intro:sec:methods}
+\section{Methods for Detecting Hot Jupiters and Other Exoplanets}\label{cha:intro:sec:methods}
 
 The majority of the known exoplanetary systems contain planets similar in mass to Jupiter and the other solar system giant planets, rather than the lighter terrestrial planets such as Earth.
 This is because most of the exoplanets were found by measuring a change in the motion of their star caused by the gravitational presence of the orbiting planet, a method that is inherently more sensitive to massive planets.
-The velocity of a star in space can be split into two components: the {\it radial velocity} along the line of sight to the star (either toward or away from us), and the {\it tangential velocity} across the sky, perpendicular to the line of sight.
+The velocity of a star in space can be split into two components: the {\textit radial velocity} along the line of sight to the star (either toward or away from us), and the {\textit tangential velocity} across the sky, perpendicular to the line of sight.
 Although there are several other successful methods to find exoplanets, in this thesis I will concentrate on a planet search that uses the measurement of radial-velocity variations to confirm the existence of planets observed to transit across stellar disks.
 
-\subsection{Radial Velocities}
-\label{cha:intro:sec:methods:sub:rv}
+\subsection{Radial Velocities}\label{cha:intro:sec:methods:sub:rv}
 
 The radial velocity of a star is determined from the Doppler shifts of the stellar spectral lines due to the motion of the star.
 By measuring the variation with time of the radial velocities of the star (of mass \mstar) and deriving the stellar orbit around the barycenter of the system, we can determine several orbital parameters of the planet, such as the orbital period $P$
@@ -40,26 +37,26 @@ and the eccentricity $e$.
 We can also estimate its mass, or at least a lower limit to the mass, from these orbital parameters and the amplitude of the variation.
 The product of the planetary mass $\mp$ and the sine of the orbital inclination $i$ can be computed from the mass function:
 \begin{eqnarray*}
-\frac{(\mp \sin{i})^3}{(\mstar + \mp)^2} & =
-& \frac{P K^3}{2 \pi G}  (1-e^2)^{3/2},
+\frac{(\mp \sin{i})^3}{(\mstar + \mp)^2} & = % chktex 3
+& \frac{P K^3}{2 \pi G}  (1-e^2)^{3/2}, % chktex 3
 \end{eqnarray*}
-where $K$ is the {\it semi}-amplitude of the radial velocity variation and $G$ is the universal gravitational constant.
+where $K$ is the {\textit semi}-amplitude of the radial velocity variation and $G$ is the universal gravitational constant.
 This product is known as the minimum mass of the planet.
 Assuming a circular orbit and that $\mp << \mstar$, we can write this as:
 \begin{eqnarray}
 \mp \sin{i} & \simeq & 1\,\mjup \left( \frac{K}{200\,\ms} \right)
-    \left( \frac{P}{\mathrm{day}} \right)^{1/3}
-    \left( \frac{\mstar}{\msun} \right)^{2/3}.\label{cha:intro:sec:methods:sub:rv:eqn:mpsini}
+    \left( \frac{P}{\mathrm{day}} \right)^{1/3} % chktex 3
+    \left( \frac{\mstar}{\msun} \right)^{2/3}.\label{cha:intro:sec:methods:sub:rv:eqn:mpsini} % chktex 3
 \end{eqnarray}
 Thus, the gravitational effect of Jupiter on the Sun is quite small, resulting in a motion of     12.5\,\ms\ or 45\,$\mathrm{km\,hr^{-1}}$, whereas a 1\,\mjup\ planet in a one-day period around the sun would induce a motion of $K=200\,\ms$.
 The ability to measure from many parsecs away these small orbital accelerations requires measuring shifts in the stellar spectral lines with a precision of roughly one thousandth of the width of a spectral line.
-Hardware and software developments have improved this precision to the point where it is possible to detect planets with minimum masses of $\sim$5\,\mearth ($\sim$0.02\,\mjup; e.g., \mbox{Gliese 581c}; \citealp{Udry_Bonfils_Delfosse:aa:2007a}).
+Hardware and software developments have improved this precision to the point where it is possible to detect planets with minimum masses of $\sim$5\,\mearth\ ($\sim$0.02\,\mjup; e.g., \mbox{Gliese 581c}; \citealp{Udry_Bonfils_Delfosse:aa:2007a}).
 
 Although the radial-velocity surveys are the most prolific planet campaigns, they suffer from several limitations.
 The target stars are observed one at a time, requiring a heavy investment of large telescope time.
 The surveys are restricted to the brightest stars in the sky, again due to limited telescope resources.
 Finally, the precision of these measurements is not likely to be indefinitely improved, due to an astrophysical limit.
-Stars are asteroseismically active, producing radial-velocity ``jitter'' on the scale of ~1--10\,\ms\ (\citealp*{Saar_Butler_Marcy:apjl:1998a}; \citealp{Santos_Mayor_Naef:aa:2000a, Wright:pasp:2005a}).
+Stars are asteroseismically active, producing radial-velocity ``jitter'' on the scale of ~1--10\,\ms\ (\citealp*{Saar_Butler_Marcy:apjl:1998a}; \citealp{Santos_Mayor_Naef:aa:2000a, Wright:pasp:2005a}).% chktex 39
 It is thought that this jitter will hinder achieving precisions much better than currently obtained.
 
 \begin{figure}
@@ -68,11 +65,10 @@ It is thought that this jitter will hinder achieving precisions much better than
 \includegraphics[angle=90,width=.90\textwidth]{1_rvplanets}
 \caption[Orbital period distribution of the 232 known exoplanets]{%
 Orbital period distribution of the 232 known exoplanets as a function of their minimum masses.
-Jupiter is shown for comparison as a {\it red, filled circle}.
+Jupiter is shown for comparison as a {\textit red, filled circle}.
 Relatively few massive planets with short orbital periods have been found, despite the bias for such planets in the radial-velocity surveys.
-An approximate detection threshold (defined as $K=4\sigma$, see text) is shown as a {\it dotted line}.%
-}
-\label{cha:intro:sec:methods:sub:rv:fig:rv}
+An approximate detection threshold (defined as $K=4\sigma$, see text) is shown as a {\textit dotted line}.%
+}\label{cha:intro:sec:methods:sub:rv:fig:rv}
 \end{center}
 \end{figure}
 
@@ -92,29 +88,27 @@ The associated detection threshold, calculated using equation~\ref{cha:intro:sec
 \includegraphics[angle=90,width=.90\textwidth]{1_rvplanetseccs}
 \caption[Orbital eccentricity distribution of known exoplanets]{%
 Orbital eccentricities of known exoplanets as a function of their orbital distance.
-Jupiter is shown for comparison as a {\it red, filled circle}.
-Most of the hot Jupiters (those to the left of the {\it dotted line}) have negligible eccentricity as expected from tidal circularization.%
-}
-\label{cha:intro:sec:methods:sub:rv:fig:rve}
+Jupiter is shown for comparison as a {\textit red, filled circle}.
+Most of the hot Jupiters (those to the left of the {\textit dotted line}) have negligible eccentricity as expected from tidal circularization.%
+}\label{cha:intro:sec:methods:sub:rv:fig:rve}
 \end{center}
 \end{figure}
 
 Many of the known extrasolar gas giants have orbital periods much less than that of Jupiter (again, see figure~\ref{cha:intro:sec:methods:sub:rv:fig:rv}), much to the surprise of the early discoverers.
-Extrasolar gas giants that orbit their stars within 0.1\,AU are known as {\it hot Jupiters}, referring to the intense insolation experienced in a relative orbit well inside that of Mercury.
-Tidal interactions (\citealp[see, e.g.,][]{Rasio_Ford:Science:1996a}) with the nearby star result in circular orbits for most of these close-in planets (see figure~\ref{cha:intro:sec:methods:sub:rv:fig:rve}).
+Extrasolar gas giants that orbit their stars within 0.1\,AU are known as {\textit hot Jupiters}, referring to the intense insolation experienced in a relative orbit well inside that of Mercury.
+Tidal interactions (\citealp[see, e.g.,][]{Rasio_Ford:Science:1996a}) with the nearby star result in circular orbits for most of these close-in planets (see figure~\ref{cha:intro:sec:methods:sub:rv:fig:rve}).% chktex 10 chktex 9
 Several planet searches such as this thesis work concentrate on these objects as they are both easier to find (due to their rapidly repeating signals) and fascinating to study (due to their extreme environment close to the star).
 The proximity to the star also increases the probability that they will be observed to pass across the stellar disk.
 The radial-velocity method achieves its full potential when combined with such transit observations, as this combined method allows a precise estimate of the mass and radius of the planet.
 
-\subsection{Transits}
-\label{cha:intro:sec:methods:sub:trans}
+\subsection{Transits}\label{cha:intro:sec:methods:sub:trans}
 
 For every system of gravitationally bound celestial objects, there is a probability that we will observe these objects passing in front of each other, eclipsing the light from the other.
 In the case of a hot Jupiter with a radius $\rp$ in a circular orbit around a star of radius \rstar, this probability is given by:
 \begin{eqnarray*}
 P & = & \frac{\rp + \rstar}{a},\\
  & \simeq & \frac{\rstar}{a},\\
-  & \simeq & 10\% \left( \frac{\rstar}{\rsun} \right) \left( \frac{a}{0.05 AU} \right)^{-1},
+  & \simeq & 10\% \left( \frac{\rstar}{\rsun} \right) \left( \frac{a}{0.05 AU} \right)^{-1}, % chktex 3
 \end{eqnarray*}
 where 0.05\,AU is the median orbital distance for systems containing hot Jupiters \citep{Sackett:POSS:1999a}.
 A planet in an 0.05\,AU orbit around a solar-sized star (with $P\sim10$\%) is therefore an ideal candidate to monitor for the transit of the planet across the star.
@@ -125,10 +119,10 @@ Assuming that \rstar\ can be determined from spectroscopy, the radius of the pla
 \begin{eqnarray*}
 r_{p} & = & {\rstar} \sqrt{\Delta F}.
 \end{eqnarray*}
-Such a transit would have a duration $D$ of :
+Such a transit would have a duration $D$ of:
 \begin{eqnarray*}
 D = \frac{P}{\pi} \arcsin{\left( \frac{\rstar}{a \sin{i}}
-\sqrt{\left(1+\frac{\rp}{\rstar}\right)^2 - b^2} \right)},
+\sqrt{\left(1+\frac{\rp}{\rstar}\right)^2 - b^2} \right)}, % chktex 3
 \end{eqnarray*}
 where $b$ $(=a\cos{i}/\rstar)$ is the impact parameter \citep{Seager_Mallen-Ornelas:apj:2003a}.
 For a Jupiter-sized planet that transits the equator of a solar-type star with a 4-day period, the transit duration $D\sim2.5$\,hours.
@@ -139,14 +133,13 @@ For a Jupiter-sized planet that transits the equator of a solar-type star with a
 \includegraphics[width=.90\textwidth]{1_radii}\\
 \includegraphics[width=.90\textwidth]{1_periods}\\
 \caption[Mass-radius and mass-period relations for transiting planets]{%
-Mass-radius ({\it top}) and mass-period ({\it bottom}) relations for the transiting planets known at the time of writing.
-The {\it dot-dashed lines} represent different densities.
+Mass-radius ({\textit top}) and mass-period ({\textit bottom}) relations for the transiting planets known at the time of writing.
+The {\textit dot-dashed lines} represent different densities.
 There is a spread of radii for planets of the same mass, and reproducing the largest radii is still beyond current structural models.
-There also appears to be a decreasing trend in mass with period in the {\it bottom panel}.
+There also appears to be a decreasing trend in mass with period in the {\textit bottom panel}.
 In the $\sim$1--2-day period range, the planets all have $\mp \geq \mjup$.
 This may indicate different formation mechanisms for these planetary systems than those at longer periods.
-}
-\label{cha:intro:sec:methods:sub:trans:fig:tp}
+}\label{cha:intro:sec:methods:sub:trans:fig:tp}
 \end{center}
 \end{figure}
 
@@ -166,43 +159,40 @@ Again, over time when more transiting systems are known, it is likely that this 
 
 As well as providing the most precise masses and radii known for extrasolar planets, nearby transiting planets present some other unique opportunities to study their nature:
 \begin{enumerate}
-\item
+\textitem\
 Space-based telescopes offer the promise of exquisitely precise transit light curve with which to look for evidence of rings and satellites orbiting the gas giant \citep[see, e.g.,][]{Brown_Charbonneau_Gilliland:apj:2001a}.
-\item
+\textitem\
 Radial-velocity observations of the star during transit can measure the strength of the Rossiter-McLaughlin effect \citep{McLaughlin:apj:1924a,Rossiter:apj:1924a}, an apparent radial-velocity variation caused by the blocking of light from the differentially rotating star.
 The strength of the variation indicates the misalignment of the orbital and rotation axes of the system.
-\item
+\textitem\
 We can also observe the starlight as it transmits through the planetary atmosphere during transit, and look for spectral features indicative of the chemical composition of the planet~\citep{Charbonneau_Brown_Noyes:apj:2002a, Vidal-Madjar_Lecavelier-des-Etangs_Desert:nat:2003a, Vidal-Madjar_Desert_Lecavelier-des-Etangs:apjl:2004a, Deming_Brown_Charbonneau:apj:2005a, Barman:apjl:2007a}.
-\item
+\textitem\
 The relative flux of a hot Jupiter to that of the star is greatest in the infrared.
 Since a transiting system undergoes a secondary eclipse as well as a primary eclipse (the transit), we can estimate the strength of this emission by comparing the system flux before the secondary eclipse, and the flux during the secondary eclipse when the star blocks the planetary flux.
 Infrared emission has already been observed from several transiting planets using \spi\ \citep[see, e.g.,][]{Charbonneau_Allen_Megeath:apj:2005a, Deming_Seager_Richardson:nat:2005a}, and recently the first spectra of exoplanets were obtained \citep{Richardson_Deming_Horning:Nature:2007a, Swain_Bouwman_Akeson:preprint:2007a, Grillmair_Charbonneau_Burrows:apjl:2007a}, as well as the first map of the emission variation across a planet \citep{Knutson_Charbonneau_Allen:nat:2007a}.
 \end{enumerate}
 
 \section[Formation, Structure, and Composition of Highly-Irradiated Gas Giants]
-{Formation, Structure, and Composition of \\ Highly-Irradiated Gas Giants}
-\label{cha:intro:sec:form}
+{Formation, Structure, and Composition of \\ Highly-Irradiated Gas Giants}\label{cha:intro:sec:form}
 
 Transiting systems provide precise measurements of planetary masses and radii and facilitate the direct study of the orbital alignment and spectral features of the planet.
 In this section, I will explain how these observations serve as important constraints for models of the initial formation, internal structure and atmospheric composition of these distant gas giants.
 Before the discovery of these giants in such extreme environments, the only constraints of theoretical models were the solar system gas giants.
 Models based on our own planetary system proved to be inadequate for hot Jupiters.
 
-\subsection{The Birth of Giants}
-\label{cha:intro:sec:form:subsec:birth}
+\subsection{The Birth of Giants}\label{cha:intro:sec:form:subsec:birth}
 
 The canonical model for the formation of gas giants prior to the discovery of hot Jupiters nicely reproduced the giant planets of our solar system.
 In this core accretion model \citep[see, e.g.,][]{Pollack:araa:1984a,Pollack_Hubickyj_Bodenheimer:icarus:1996a}, the gas giant begins as a protoplanetary core within a nebular disk and grows through collisions with other protoplanets and the accretion of gas from the surrounding disk.
 When the core is massive enough, a period of runaway gas accretion occurs, and a giant planet is born.
 This core formation relies on a suitable quantity of icy particles in the surroundings to form planetesimals.
-With the discovery of \mbox{51\,Peg\,b} \citep{Mayor_Queloz:nat:1995a}, a giant planet close to its star and well inside the {\it ice line} (the boundary beyond where most material is in solid, rather than gaseous, form), the validity of this theory was called into question: how could this planet have formed a solid core so close to the star?
+With the discovery of \mbox{51\,Peg\,b} \citep{Mayor_Queloz:nat:1995a}, a giant planet close to its star and well inside the {\textit ice line} (the boundary beyond where most material is in solid, rather than gaseous, form), the validity of this theory was called into question: how could this planet have formed a solid core so close to the star?
 
-The most likely explanation is that hot Jupiters like \mbox{51\,Peg\,b} formed outside the ice line (as did the solar system gas giants), and then moved or {\it migrated} inward toward the star (\citealp{Goldreich_Tremaine:apj:1980a}; Lin, Bodenheimer, \& Richardson~\citeyear{Lin_Bodenheimer_Richardson:nat:1996a}; \citealp{Trilling_Benz_Guillot:apj:1998a}).
+The most likely explanation is that hot Jupiters like \mbox{51\,Peg\,b} formed outside the ice line (as did the solar system gas giants), and then moved or {\textit migrated} inward toward the star (\citealp{Goldreich_Tremaine:apj:1980a}; Lin, Bodenheimer, \& Richardson~\citeyear{Lin_Bodenheimer_Richardson:nat:1996a}; \citealp{Trilling_Benz_Guillot:apj:1998a}).
 This migration is enabled by gravitational interactions between the planet and the disk.
 Whether the migration is halted by some mechanism or the observed planet survived simply because the disk dissipated in time to prevent further migration is still unresolved.
 
-\subsection{A Core or Not a Core, That is the Question}
-\label{cha:intro:sec:form:subsec:core}
+\subsection{A Core or Not a Core, That is the Question}\label{cha:intro:sec:form:subsec:core}
 
 An alternative formation model for gas giants was proposed by~\citet{Boss:sc:1997a}.
 In his gravitational instability model, gas giants can be formed rapidly as collapsing instabilities in the nebula.
@@ -230,11 +220,10 @@ The kinetic energy source of \citet{Guillot_Showman:aa:2002a} should apply to ev
 \citet{Deming_Seager_Richardson:nat:2005a} refuted the possibility that tidal damping of a nonzero eccentricity was an energy source for the inflated planet \hdTZNb\ by deriving a negligible eccentricity from observations of a secondary eclipse.
 Also, \citet*{Fabrycky_Johnson_Goodman:apj:2007a} has rejected obliquity tides as not providing enough energy through dissipation to account for large radii of hot Jupiters.
 
-\subsection{Extrasolar Atmospheres}
-\label{cha:intro:sec:form:subsec:atm}
+\subsection{Extrasolar Atmospheres}\label{cha:intro:sec:form:subsec:atm}
 
 Although giant planets consist mainly of gas, namely molecular hydrogen and helium, both the absorption rate of incident radiation, and the emission from (and hence cooling rate of) the planet is determined mostly by a thin outer layer of these gaseous molecules.
-This thin layer is called the {\it atmosphere} of the planet.
+This thin layer is called the {\textit atmosphere} of the planet.
 The composition of the atmosphere, and the gas giant itself, is expected to be roughly the composition of the nebula from which it formed, although substantially enriched due to bombardment of planetesimals.
 The presence or absence of specific chemical species in the atmosphere is then dependent on the temperature and pressure gradients of the planet.
 The metallicity of the atmosphere can be a significant effect.
@@ -256,8 +245,7 @@ However, if we measure the amount of flux from the night-side of a transiting pl
 Understanding the atmospheric makeup of the hot Jupiters may provide us with an explanation for the inflated exoplanets, as the predictions for these radii are dependent on understanding the cooling rates of the planets.
 
 
-\section{Thesis Motivation---Past and Present}
-\label{cha:intro:sec:motivation}
+\section{Thesis Motivation---Past and Present}\label{cha:intro:sec:motivation}
 
 At the beginning of my thesis work, only one transiting planet, \hdTZNb, was known.
 The radius of this planet was larger than could be explained by extrapolating models of solar system gas giants to account for intense insolation.
@@ -272,8 +260,7 @@ The bright stars that I would find as part of my survey would also be ideal targ
 The goals that motivate my thesis work still hold today, since the number of known transiting planets (19) is still quite low.
 The planets found by TrES and other surveys continue to be much sought after, and quickly observed with the best instruments available to uncover the true nature of each planet.
 
-\section{Thesis Outline}
-\label{cha:intro:sec:outline}
+\section{Thesis Outline}\label{cha:intro:sec:outline}
 
 The goals of my thesis were to both detect and explore new transiting planets.
 Much of my thesis work involved participation in the Trans-atlantic Exoplanet Survey (TrES), a network of three ten-centimeter optical telescopes used to search for nearby transiting planets.
@@ -305,18 +292,18 @@ The relative faintness of the binary prevented the detection of its radial-veloc
 Multicolor photometry revealed a color-dependent eclipse, indicative of the binary nature.
 In this chapter, I go into more detail about how I produce light curves from Sleuth photometry and select transit candidates.
 
-In chapter~\ref{cha:tres2}, I present the discovery in one of the Sleuth fields of a massive gas giant \tresTwo\ that was confirmed from the spectroscopic orbit derived from my observations with Keck/HIRES.
-\tresTwo\ is the first transiting planet known to reside in the field of view of the upcoming NASA {\it Kepler} mission that will search for new exoplanets.
+In chapter~\ref{cha:tres2}, I present the discovery in one of the Sleuth fields of a massive gas giant \tresTwo\ that was confirmed from the spectroscopic orbit derived from my observations with Keck/HIRES.\@
+\tresTwo\ is the first transiting planet known to reside in the field of view of the upcoming NASA {\textit Kepler} mission that will search for new exoplanets.
 Similarly, in chapter~\ref{cha:tres3}, I present \tresThree, another massive transiting planet from a Sleuth field, this time with a very-short orbital period.
 This discovery has further cemented the hypothesis that the nearby exoplanets discovered by wide-field transit surveys and the more distant gas giants found by narrow-field transit surveys have the same intrinsic period distribution.
 I have also included in appendix~\ref{cha:tres4} the discovery paper for \tresFour, the third planet found in a Sleuth field.
 This planet has the largest radius and lowest density of the currently known transiting planets.
 
 Although each newly discovered transiting planet automatically provides a new constraint for theoretical structural models for these Jovian planets, the nearby transiting planets also present promises of a more detailed exploration.
-{\it Spitzer} has been a leading source of new information about exoplanets, and in chapter~\ref{cha:spitzer}, I present my analysis of the first \spi/IRAC observations of \tresTwo, and determine a negligible orbital eccentricity for this hot Jupiter. There is no evidence of strong atmospheric absorption from these observations, but future analysis including additional \spi\ observations will be more conclusive.
+{\textit Spitzer} has been a leading source of new information about exoplanets, and in chapter~\ref{cha:spitzer}, I present my analysis of the first \spi/IRAC observations of \tresTwo, and determine a negligible orbital eccentricity for this hot Jupiter. There is no evidence of strong atmospheric absorption from these observations, but future analysis including additional \spi\ observations will be more conclusive.
 
 Finally, I examine the yield of planets from this survey in comparison with predictions.
 In chapter~\ref{cha:human}, I present initial results from a study of my ability to recover fake transit light curves injected into real data from a TrES field.
 Rather than just concentrate on the recovery rate of the transit-search algorithm I employ, I explore the human element of identifying worthy planet candidates, and the resultant recovery rate of transit candidates.
 
-The photometric data from Sleuth have also been of value in the study of eclipsing binaries. As this is not related to my thesis goals, I simply refer the reader to \citet{Creevey_Benedict_Brown:apjl:2005a} and Devor et al.~(2007, in preparation) as examples of this use of Sleuth data.
+The photometric data from Sleuth have also been of value in the study of eclipsing binaries. As this is not related to my thesis goals, I simply refer the reader to \citet{Creevey_Benedict_Brown:apjl:2005a} and Devor et al.~(2007, in preparation) as examples of this use of Sleuth data.% chktex 17

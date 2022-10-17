@@ -1,14 +1,13 @@
+% chktex-file 44
 \chapter[The Box-fitting Least-Squares (BLS) Transit-Search Algorithm]%
 {%
 \LARGE The Box-fitting Least-Squares (BLS) Transit-Search Algorithm%
-}
-\label{cha:bls}
+}\label{cha:bls}
 
 As a reference to the reader, in this appendix I summarize the method to search for periodic transits signals in photometric data proposed by Kovacs, Zucker, \& Mazeh~(\citeyear{Kovacs_Zucker_Mazeh:aa:2002a}).
 For easy comparison with the reference paper, in general I use the authors' notation.
 
-\section{A General Description of the BLS Algorithm}
-\label{cha:bls:sec:desc}
+\section{A General Description of the BLS Algorithm}\label{cha:bls:sec:desc}
 
 When a dark planet transits the disk of a star, the resulting U-shaped light curve (see, e.g., figure~\ref{cha:human:sec:model:fig:agol}) requires a complex analytical description \citep{Mandel_Agol:apjl:2002a}.
 Trying to fit such a model to each light curve from a transit survey such as the Trans-atlantic Exoplanet Survey (TrES) would be prohibitively computationally intensive.
@@ -25,8 +24,7 @@ The algorithm then computes the Signal Residue (a measure of the quality of the 
 The best-fit period $\hat{P}$ is the trial period that gives the largest Signal Residue.
 The overall best-fit parameters from the BLS algorithm for the input time series are then $\hat{P}$, and the corresponding \{$\hat{q}$, $\hat{\delta}$, $\hat{\phi}$\}.
 
-\section[The Signal Residue and Signal Detection Efficiency]{The Signal Residue and Signal Detection \\ Efficiency}
-\label{cha:bls:sec:defs}
+\section[The Signal Residue and Signal Detection Efficiency]{The Signal Residue and Signal Detection \\ Efficiency}\label{cha:bls:sec:defs}
 
 Assume we have a time series phased using a trial period $P_{i}$.
 Let us denote the folded time series by $\{ \hat{x}_{i} \}, i=1,2,\ldots,n$.

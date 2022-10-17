@@ -1,12 +1,11 @@
+% chktex-file 44
 \chapter[Identifying Transits in TrES Data Sets: The Human Factor]%
 {%
 Identifying Transits in \\ TrES Data Sets: \\ The Human Factor%
 \protect\CFNF%
-}
-\label{cha:human}
+}\label{cha:human}
 
-\section{Understanding the Yield of Transit Surveys}
-\label{cha:human:sec:intro}
+\section{Understanding the Yield of Transit Surveys}\label{cha:human:sec:intro}
 
 The discovery of the first transiting planet \hdTZNb\ \citep{Charbonneau_Brown_Latham:apjl:2000a, Henry_Marcy_Butler:apj:2000a} spawned a great flurry of campaigns to search for these rare objects.
 Transiting planets yield precise measurements of the radius and mass of giant planets outside our solar system that are much needed constraints for theoretical models, and they provide the promise of a better understanding of the structure and formation of gas giants.
@@ -36,8 +35,7 @@ Several studies of the potential recovery rates of transit candidates have been 
 Here I present the recovery rate of the BLS algorithm when applied to TrES data.
 I also discuss my ability to spot true transit signals among the noise, as the efficiency of this step has not been previously quantified.
 
-\section[Injecting Model Light Curves into a TrES Data Set]{Injecting Model Light Curves into a \\ TrES Data Set}
-\label{cha:human:sec:model}
+\section[Injecting Model Light Curves into a TrES Data Set]{Injecting Model Light Curves into a \\ TrES Data Set}\label{cha:human:sec:model}
 
 I conducted a blind test of my ability to identify transit-like signals in a real data set from the TrES campaign.
 I chose the TrES Lyr1 field (centered on the star \mbox{16\,Lyr}) in which I had identified the transiting planet \tresTwo\ (\citealp{ODonovan_Charbonneau_Mandushev:apjl:2006a}, see chapter~\ref{cha:tres2}).
@@ -49,8 +47,7 @@ The total yield to date of this $5.7\degr \times 5.7\degr$ field, which contains
 \includegraphics[width=.75\textwidth, angle=90]{7_jmks}\\
 \caption[Histogram of 2MASS $J-K_{s}$ for TrES Lyr1 field]{%
 Histogram of the 2MASS $J-K_{s}$ infrared colors for the TrES Lyr1 field.%
-}
-\label{cha:human:sec:model:fig:jmks}
+}\label{cha:human:sec:model:fig:jmks}
 \end{center}
 \end{figure}
 
@@ -61,13 +58,12 @@ Histogram of the 2MASS $J-K_{s}$ infrared colors for the TrES Lyr1 field.%
 \includegraphics[width=.60\textwidth, angle=90]{7_phys_b}\\
 \caption[Randomized stellar parameters for injected transits]{%
 Randomized stellar parameters used to generate fake transit light curves injected into a TrES time series, plotted versus the approximate $V_{T}$ magnitudes: %
-({\it top panel}) the mass of the host star, and %
-({\it bottom panel}) the stellar radius.
+({\textit top panel}) the mass of the host star, and %
+({\textit bottom panel}) the stellar radius.
 The number of stars of a given magnitude increases with magnitude.
 The stellar mass and radius were generated using the 2MASS $J-K_{s}$ infrared colors from figure~\ref{cha:human:sec:model:fig:jmks} (see text for a discussion of the distribution).
 These values were computed to two decimal places, which results in the discrete levels visible in the plots.%
-}
-\label{cha:human:sec:model:fig:stel}
+}\label{cha:human:sec:model:fig:stel}
 \end{center}
 \end{figure}
 
@@ -79,8 +75,7 @@ These values were computed to two decimal places, which results in the discrete 
 Same as for figure~\ref{cha:human:sec:model:fig:stel}, but for the radius $R_{p}$ of the supposed transiting planet.
 Again, the discrete levels in the values for $R_{p}$ are due to the limit of two decimal places for the values.
 %
-}
-\label{cha:human:sec:model:fig:plan}
+}\label{cha:human:sec:model:fig:plan}
 \end{center}
 \end{figure}
 
@@ -115,12 +110,11 @@ The values for these three physical parameters are shown in figures~\ref{cha:hum
 \includegraphics[width=.55\textwidth, angle=90]{7_orb_a}\\
 \includegraphics[width=.55\textwidth, angle=90]{7_orb_b}\\
 \caption[Randomized transit impact parameters and orbital inclinations]{%
-Randomized impact parameters ({\it top panel}) for the model
-transiting systems, from which the orbital inclinations in the {\it bottom panel} are derived.
+Randomized impact parameters ({\textit top panel}) for the model
+transiting systems, from which the orbital inclinations in the {\textit bottom panel} are derived.
 The orbital inclination is only significantly lower than $90\degr$ for those candidates with short periods and large impact parameters.
 For example, if $i<80\degr$, $P=1$\,day, and $R_{\star}=R_{\sun}$, then $b$ must be greater than 0.7. %
-}
-\label{cha:human:sec:model:fig:orb}
+}\label{cha:human:sec:model:fig:orb}
 \end{center}
 \end{figure}
 
@@ -135,14 +129,13 @@ The distribution of $b$ and $i$ can be seen in figure~\ref{cha:human:sec:model:f
 \includegraphics[width=.55\textwidth, angle=90]{7_bls_b}\\
 \caption[Randomized values for first two BLS parameters]{%
 Randomized values for two of the four parameters that are derived for each light curve by the Box-fitting Least-Squares (BLS) transit-search algorithm: %
-({\it top panel}) the orbital period $P$ of the transit, and %
-({\it bottom panel}) the transit depth $\Delta$.
+({\textit top panel}) the orbital period $P$ of the transit, and %
+({\textit bottom panel}) the transit depth $\Delta$.
 To mimic the output of the BLS algorithm, $P$ and $\Delta$ are kept to 6 and 3 decimal places, respectively.
 Since \mbox{$0.9\,\rjup \leq \rp \leq 1.2\,\rjup$} and most derived stellar radii lie in the range \mbox{$0.7\,\rsun \leq \rstar \leq 1.3\,\rsun$}, most of the transit depths are in the range \mbox{$0.005 \leq \Delta \leq 0.03$}.
 The outliers are those transits of a very small star by very large planet, or of a very large star by a very small planet.
 These points are evidence of the aforementioned bias caused by the assumption that all field stars are dwarf stars. %
-}
-\label{cha:human:sec:model:fig:bls1}
+}\label{cha:human:sec:model:fig:bls1}
 \end{center}
 \end{figure}
 
@@ -153,14 +146,13 @@ These points are evidence of the aforementioned bias caused by the assumption th
 \includegraphics[width=.55\textwidth, angle=90]{7_bls_d}\\
 \caption[Randomized values for final two BLS parameters]{%
 Same as for figure~\ref{cha:human:sec:model:fig:bls1}, but for %
-({\it top panel}) the fractional transit duration $d$, and %
-({\it bottom panel})  the orbital phase $\Phi$ at the time of transit.
+({\textit top panel}) the fractional transit duration $d$, and %
+({\textit bottom panel})  the orbital phase $\Phi$ at the time of transit.
 To mimic the output of the BLS algorithm, $d$ and $\Phi$ are kept to 3 decimal places.
 The fractional transit duration is only significantly higher than $0.06$ for those candidates with short periods and small stellar radii.
 For example, if $d=0.1$, then $a$ must be approximately $3\,R_{\star}$. %
 %
-}
-\label{cha:human:sec:model:fig:bls2}
+}\label{cha:human:sec:model:fig:bls2}
 \end{center}
 \end{figure}
 
@@ -170,8 +162,7 @@ and $\Phi$ ($0\leq \Phi \leq 1$).
 Note that while $\Phi$ is normally defined so that $\Phi=0$ at $T_{c}$, here $\Phi$ is defined so that $\Phi=0$ at the start of the TrES observing run.
 This is to conform with the definition used by our BLS algorithm for $T_{c}$.
 I derived the transit depths from $\Delta = (R_{p}/R_{star})^{2}$, and the fractional transit durations using equation~4 from \citet{Charbonneau_Winn_Latham:apj:2006a}:
-\begin{eqnarray*}
-\label{cha:human:sec:model:eqn:dur}
+\begin{eqnarray*} \label{cha:human:sec:model:eqn:dur}
 \sin{i} \cos{\left(\frac{\pi D}{P}\right)} & = & \sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}, \\
  i\sim90\degr \Rightarrow d & = & \frac{1}{\pi} \arccos{\left(\sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}\right)}.
 \end{eqnarray*}
@@ -182,13 +173,12 @@ Figures~\ref{cha:human:sec:model:fig:bls1} and~\ref{cha:human:sec:model:fig:bls2
 \includegraphics[width=.55\textwidth, angle=90]{7_agol_a}\\
 \includegraphics[width=.55\textwidth, angle=90]{7_agol_b}\\
 \caption[Example of model transits]{%
-({\it Top}) %
+({\textit Top}) %
 Model transit light curves for a 1.2\% transit with a period of 1.038588\,days.
 The shape of the three light curves is determined by the limb-darkening associated with the specified spectral type.
 Distinguishing between these light curves is not possible for the TrES photometry, hence I simply assumed the G0V limb-darkening coefficients.
-({\it Bottom}) Model transit light curve from the {\it top panel} plotted versus the times of observation during the TrES Lyr-1 run. %
-}%
-\label{cha:human:sec:model:fig:agol}%
+({\textit Bottom}) Model transit light curve from the {\textit top panel} plotted versus the times of observation during the TrES Lyr-1 run. %
+}\label{cha:human:sec:model:fig:agol}%
 \end{center}
 \end{figure}
 
@@ -197,10 +187,9 @@ Distinguishing between these light curves is not possible for the TrES photometr
 \centering
 \includegraphics[width=.75\textwidth, angle=90]{7_agol_c}\\
 \caption[Example of TrES light curve with injected transits]{%
-The {\it top} light curve is from the TrES Lyr1 field, phased to an orbital period of 1.038588\,days. The {\it bottom} light curve shows the results of injecting the model transits from figure~\ref{cha:human:sec:model:fig:agol}%
+The {\textit top} light curve is from the TrES Lyr1 field, phased to an orbital period of 1.038588\,days. The {\textit bottom} light curve shows the results of injecting the model transits from figure~\ref{cha:human:sec:model:fig:agol}%
 .%
-}%
-\label{cha:human:sec:model:fig:inject}%
+}\label{cha:human:sec:model:fig:inject}%
 \end{center}
 \end{figure}
 
@@ -208,8 +197,7 @@ Using these random system parameters as unseen input, I generated model transit 
 This code computes the variation with time in the amount of obscuration of a limb-darkened source by a dark body, by deriving the area of the source obscured at that time, and outputs this variation in terms of relative flux.
 Although the TrES photometry is too noisy to discern between different limb-darkening due to different stellar spectral types, the code requires limb-darkening coefficients as part of the input.
 I assumed a quadratic limb-darkening model of the form:
-\begin{eqnarray*}
-\label{cha:human:sec:model:eqn:limb}
+\begin{eqnarray*}\label{cha:human:sec:model:eqn:limb}
 I(\mu)/I(1) = 1-a(1-\mu)-b(1-\mu)^2,
 \end{eqnarray*}
 where $\mu=\cos{\gamma}$, $\gamma$ is the angle between the line of sight and the local normal to the stellar surface, $I$ is the specific intensity, and $a$ and $b$ are the limb-darkening coefficients.
@@ -222,8 +210,8 @@ Distinguishing between the different limb-darkening requires photometry with exq
 I simply assumed a G0V spectral type and luminosity class for my analysis.
 
 I then accounted for the actual temporal coverage of the observations.
-The effect of this can be seen in the {\it bottom panel} of figure~\ref{cha:human:sec:model:fig:agol}%
-, where the model from the {\it top panel} have been plotted versus the times of observation of the Lyr1 field.
+The effect of this can be seen in the {\textit bottom panel} of figure~\ref{cha:human:sec:model:fig:agol}%
+, where the model from the {\textit top panel} have been plotted versus the times of observation of the Lyr1 field.
 The final product of the TrES pipeline is a series of light curves, one for each star in the field.
 These light curves have been decorrelated to remove systematics suffered by wide-field transit surveys, and averaged (in 9-minute bins) to reduce the computational effort of the BLS transit search.
 For this test, I chose the combined binned TrES data set, with observations from both Sleuth%
@@ -234,8 +222,7 @@ The light curves of the stars not chosen as fake hosts were untouched.
 Figures~\ref{cha:human:sec:model:fig:inject} shows the result of injecting the model light curve from figure~\ref{cha:human:sec:model:fig:agol} %
 into a real time series from the Lyr1 field.
 
-\section{BLS and Visual-Recovery Methods of Injected Transits}
-\label{cha:human:sec:rec}
+\section{BLS and Visual-Recovery Methods of Injected Transits}\label{cha:human:sec:rec}
 
 \begin{figure}
 \begin{center}
@@ -244,13 +231,12 @@ into a real time series from the Lyr1 field.
 \includegraphics[width=.55\textwidth, angle=90]{7_sde_b}\\
 \caption[Histograms of BLS SDEs for fake data set]{%
 Histograms of the Signal Detection Efficiency (SDE) derived by the Box-fitting Least-Squares transit-search algorithm for: %
-({\it top panel}) the entire TrES Lyr1 data set with injected transits, and %
-({\it bottom panel}) those candidates with $\mathrm{SDE}\geq6$.
+({\textit top panel}) the entire TrES Lyr1 data set with injected transits, and %
+({\textit bottom panel}) those candidates with $\mathrm{SDE}\geq6$.
 Saturated stars or stars with very noisy data were skipped by the algorithm, and assigned an SDE of 0.
-The {\it dotted} line in the {\it top panel} denotes the minimum SDE of a candidate that will be visually inspected.
-I first examined the candidates with SDEs to the right of the {\it dotted} line in the {\it bottom panel}, as they are more likely not to be spurious detections caused by random noise.
-}
-\label{cha:human:sec:model:fig:sde}
+The {\textit dotted} line in the {\textit top panel} denotes the minimum SDE of a candidate that will be visually inspected.
+I first examined the candidates with SDEs to the right of the {\textit dotted} line in the {\textit bottom panel}, as they are more likely not to be spurious detections caused by random noise.
+}\label{cha:human:sec:model:fig:sde}
 \end{center}
 \end{figure}
 
@@ -262,11 +248,10 @@ I first examined the candidates with SDEs to the right of the {\it dotted} line 
 \caption[Example of an injected transit candidate with a high SDE]{%
 Example of an injected transit candidate detected by the Box-fitting Least-Squares (BLS) algorithm with a high ($\geq$8) Signal Detection Efficiency (SDE).
 Both plots show the variation in differential magnitude with orbital phase, and the four parameters (period P, duration TD, depth D, and SDE) output by the BLS algorithm are superimposed.
-The {\it upper} plot shows the entire orbit, whereas the {\it lower} plot is at near-transit.
-The {\it dotted red lines} in both plots indicate (i) the point of ingress and egress of the box-transit (taken as $\pm d$, where $d$ is the BLS fractional duration), and (ii) this region shifted by 0.5 in phase to highlight the location where a secondary eclipse might be spotted.
+The {\textit upper} plot shows the entire orbit, whereas the {\textit lower} plot is at near-transit.
+The {\textit dotted red lines} in both plots indicate (i) the point of ingress and egress of the box-transit (taken as $\pm d$, where $d$ is the BLS fractional duration), and (ii) this region shifted by 0.5 in phase to highlight the location where a secondary eclipse might be spotted.
 I view plots similar to these for each transit candidate to determine the detection is real or spurious.%
-}
-\label{cha:human:sec:model:fig:highsde}
+}\label{cha:human:sec:model:fig:highsde}
 \end{center}
 \end{figure}
 
@@ -285,8 +270,7 @@ Starting with the brightest stars, I examined each of the light curves with SDE$
 I limited my search to candidates with $0.02 \leq (P\ \mathrm{mod}\ 0.5\,\mathrm{days})\leq 0.48$ and 0.004\,mmag $\leq \Delta \leq 0.1$\,mmag.
 This limit avoids spurious detections with both integer or half-integer periods that are caused by a few bad data points within the supposed transit. Figure~\ref{cha:human:sec:model:fig:highsde} is an example of a plot of a high SDE candidate that I examined.
 
-\section{BLS and Visual-Recovery Rates}
-\label{cha:human:sec:recrates}
+\section{BLS and Visual-Recovery Rates}\label{cha:human:sec:recrates}
 
 The visual recovery of a transit light curve is heavily dependent on the accuracy of BLS transit parameters used to produce a phased light curve for inspection.
 Therefore, as a first step in determining my ability to recover the fake transit light curve, I examined the recovery rate of injected transits for the BLS transit search.
@@ -304,14 +288,13 @@ This is because a transit light curve with a negative ``depth'' is automatically
 \includegraphics[width=.55\textwidth, angle=90]{7_comp_b} \\
 \includegraphics[width=.55\textwidth, angle=90]{7_comp_a} \\
 \caption[SDE and $V_{T}$ versus period for BLS-recovered transits]{%
-({\it Top}) Signal Detection Efficiencies (SDEs) of the injected transit candidates plotted against their orbital period.
-The candidates marked in {\it green} were recovered by the Box-fitting Least-Squares (BLS) algorithm; that is, the derived orbital period was accurate to within 0.1\% and the transit depth was not negative.
-{\it Red diamonds} signify candidates not recovered by BLS.
+({\textit Top}) Signal Detection Efficiencies (SDEs) of the injected transit candidates plotted against their orbital period.
+The candidates marked in {\textit green} were recovered by the Box-fitting Least-Squares (BLS) algorithm; that is, the derived orbital period was accurate to within 0.1\% and the transit depth was not negative.
+{\textit Red diamonds} signify candidates not recovered by BLS.
 BLS recovered the majority (79\%) of injected transit candidates with $\mathrm{SDE}\gsim6$.
-({\it Bottom}) Approximate $V_{T}$ magnitudes versus orbital period for the injected transit candidates.
+({\textit Bottom}) Approximate $V_{T}$ magnitudes versus orbital period for the injected transit candidates.
 BLS recovered 62\% of candidates with $V\leq13.5$\,mag.%
-}
-\label{cha:human:sec:model:fig:rec}
+}\label{cha:human:sec:model:fig:rec}
 \end{center}
 \end{figure}
 
@@ -321,8 +304,7 @@ BLS recovered 62\% of candidates with $V\leq13.5$\,mag.%
 \includegraphics[width=.75\textwidth, angle=90]{7_comp_f}
 \caption[Histogram of SDEs for BLS-recovered transit candidates]{%
 Histogram of the Signal Detection Efficiency (SDE) derived by the Box-fitting Least-Squares transit-search algorithm for the injected transit candidates.%
-}
-\label{cha:human:sec:model:fig:histsderec}
+}\label{cha:human:sec:model:fig:histsderec}
 \end{center}
 \end{figure}
 \begin{figure}
@@ -331,15 +313,14 @@ Histogram of the Signal Detection Efficiency (SDE) derived by the Box-fitting Le
 \includegraphics[width=.75\textwidth, angle=90]{7_comp_c} \\
 \caption[Ratio of $\Delta$ to $\sigma$ versus period for BLS-recovered transits]{%
 Same as figure~\ref{cha:human:sec:model:fig:rec}, but for the ratio of the transit depth ($\Delta$) to the rms ($\sigma$) of the TrES photometry.
-Of the candidates with $\Delta\gsim\sigma$, 77\% were recovered by the transit-search algorithm (marked in {\it green}; the candidates not recovered are in {\it red}).%
-}
-\label{cha:human:sec:model:fig:ratiorec}
+Of the candidates with $\Delta\gsim\sigma$, 77\% were recovered by the transit-search algorithm (marked in {\textit green}; the candidates not recovered are in {\textit red}).%
+}\label{cha:human:sec:model:fig:ratiorec}
 \end{center}
 \end{figure}
 
 Of the 2,612 injected transit candidates, 1,153 were recovered by the BLS transit-search algorithm.
 figure~\ref{cha:human:sec:model:fig:rec} %
-shows the SDEs of these fake candidates, where the candidates in {\it green} were recovered by the BLS algorithm and those in {\it red} were not.
+shows the SDEs of these fake candidates, where the candidates in {\textit green} were recovered by the BLS algorithm and those in {\textit red} were not.
 (A histogram of these SDEs for comparison with figure~\ref{cha:human:sec:model:fig:sde} can be seen in figure~\ref{cha:human:sec:model:fig:histsderec}.)
 As can be clearly seen, the transit-search algorithm recovered the majority (79\%) of candidates with $\mathrm{SDE} \gsim 6$ but few with $\mathrm{SDE} < 6$. The latter are not significant detections \citep[see][]{Kovacs_Zucker_Mazeh:aa:2002a}.
 The BLS recovery of candidates in terms of the magnitudes of the host star can also be seen in figure~\ref{cha:human:sec:model:fig:rec}%
@@ -359,12 +340,11 @@ Of the 1,459 candidates not recovered by the BLS algorithm, 1,197 had $\mathrm{S
 \caption[BLS recovery rates for different orbital periods and planetary radii]{%
 Percentage of the injected transit candidates recovered by the automated BLS transit-search algorithm as a function of approximate $V_{T}$ magnitude for different ranges in: %
 %($a$)
-({\it top panel}) orbital period $P$, and %
+({\textit top panel}) orbital period $P$, and %
 %($b$)
-({\it bottom panel}) planetary radii $R_{p}$. %
+({\textit bottom panel}) planetary radii $R_{p}$. %
 The recovery rates have been averaged in bins in $V_{T}$ of 0.5\,mag.%
-}
-\label{cha:human:sec:model:fig:recrates1}
+}\label{cha:human:sec:model:fig:recrates1}
 \end{center}
 \end{figure}
 
@@ -376,11 +356,10 @@ The recovery rates have been averaged in bins in $V_{T}$ of 0.5\,mag.%
 \caption[BLS recovery rates for different stellar radii and impact parameters]{%
 Same as for figure~\ref{cha:human:sec:model:fig:recrates1}, but for: %
 %($a$)
-({\it top panel})  stellar radii $R_{\star}$, and %
+({\textit top panel})  stellar radii $R_{\star}$, and %
 %($b$)
-({\it bottom panel})  impact parameters $b$. %
-}
-\label{cha:human:sec:model:fig:recrates2}
+({\textit bottom panel})  impact parameters $b$. %
+}\label{cha:human:sec:model:fig:recrates2}
 \end{center}
 \end{figure}
 
@@ -397,12 +376,11 @@ Overall, the recovery rate for the BLS algorithm is about 80\% for the average m
 \includegraphics[width=.55\textwidth, angle=90]{7_visual_a} \\
 \caption[SDE and $V_{T}$ versus period for visually recovered transits]{%
 %($a$)
-({\it Top}) As for {\it top panel} of figure~\ref{cha:human:sec:model:fig:rec}%$a$
-, except that here the candidates outlined in {\it black} were visually recovered, and those outlined in {\it blue} were visually identified but discarded.
+({\textit Top}) As for {\textit top panel} of figure~\ref{cha:human:sec:model:fig:rec}%$a$
+, except that here the candidates outlined in {\textit black} were visually recovered, and those outlined in {\textit blue} were visually identified but discarded.
 %($b$)
-({\it Bottom}) Same as the {\it top panel}, but for approximate $V_{T}$ magnitudes versus orbital period for the injected transit candidates.%
-}
-\label{cha:human:sec:model:fig:visrec}
+({\textit Bottom}) Same as the {\textit top panel}, but for approximate $V_{T}$ magnitudes versus orbital period for the injected transit candidates.%
+}\label{cha:human:sec:model:fig:visrec}
 \end{center}
 \end{figure}
 
@@ -412,8 +390,7 @@ Overall, the recovery rate for the BLS algorithm is about 80\% for the average m
 \includegraphics[width=.75\textwidth, angle=90]{7_visual_f}
 \caption[Histogram of SDEs for visually recovered transit candidates]{%
 Histogram of the Signal Detection Efficiency (SDE) derived by the Box-fitting Least-Squares transit-search algorithm for the injected transit candidates that were visually recovered.%
-}
-\label{cha:human:sec:model:fig:vishistsderec}
+}\label{cha:human:sec:model:fig:vishistsderec}
 \end{center}
 \end{figure}
 
@@ -423,13 +400,12 @@ Histogram of the Signal Detection Efficiency (SDE) derived by the Box-fitting Le
 \includegraphics[width=.75\textwidth, angle=90]{7_visual_c} \\
 \caption[$\Delta/\sigma$ versus period for visually recovered transits]{%
 Same as figure~\ref{cha:human:sec:model:fig:visrec}, but for the ratio of the transit depth ($\Delta$) to the rms ($\sigma$) of the TrES photometry plotted versus the orbital period for the injected transit candidates.%
-}
-\label{cha:human:sec:model:fig:visratiorec}
+}\label{cha:human:sec:model:fig:visratiorec}
 \end{center}
 \end{figure}
 
 Of the 2,612 injected transit candidates, I recovered 641 visually, compared to 1,153 recovered by the BLS algorithm.
-I have reproduced the earlier plots showing the SDEs, magnitudes, and depth-to-rms ratios of the fake candidates in figures~\ref{cha:human:sec:model:fig:visrec}, \ref{cha:human:sec:model:fig:vishistsderec}, and~\ref{cha:human:sec:model:fig:visratiorec}. I have then outlined candidates that I visually recovered with a {\it black diamond}, and those candidates that I visually recovered, but dismissed for some reason (such as poor phase coverage at transit, or a large depth more typical of an eclipsing binary), with a {\it blue diamond.}
+I have reproduced the earlier plots showing the SDEs, magnitudes, and depth-to-rms ratios of the fake candidates in figures~\ref{cha:human:sec:model:fig:visrec}, \ref{cha:human:sec:model:fig:vishistsderec}, and~\ref{cha:human:sec:model:fig:visratiorec}. I have then outlined candidates that I visually recovered with a {\textit black diamond}, and those candidates that I visually recovered, but dismissed for some reason (such as poor phase coverage at transit, or a large depth more typical of an eclipsing binary), with a {\textit blue diamond.}
 We can see that although I visually recovered many of the candidates, there are several candidates with large SDEs, bright magnitudes and high depth-to-rms ratios that I missed.
 I also discarded several candidates with large SDEs.
 We can also see that I recovered some of the candidates that failed my recovery test for the BLS algorithm, although I dismissed them as spurious.
@@ -454,12 +430,11 @@ I confirmed that for all but a few I rejected the transit light curve as having 
 \caption[Visual-recovery rates for different periods and planetary radii]{%
 Percentage of the injected transit candidates visually recovered as a function of approximate $V_{T}$ magnitude for different ranges in: %
 %($a$)
-({\it top panel}) orbital period $P$, and %
+({\textit top panel}) orbital period $P$, and %
 %($b$)
-({\it bottom panel}) planetary radii $R_{p}$. %
+({\textit bottom panel}) planetary radii $R_{p}$. %
 The recovery rates have been averaged in bins in $V_{T}$ of 0.5\,mag.%
-}
-\label{cha:human:sec:model:fig:visrecrates1}
+}\label{cha:human:sec:model:fig:visrecrates1}
 \end{center}
 \end{figure}
 
@@ -471,12 +446,11 @@ The recovery rates have been averaged in bins in $V_{T}$ of 0.5\,mag.%
 \caption[Visual recovery of different stellar radii and impact parameters]{%
 Percentage of the injected transit candidates visually recovered as a function of approximate $V_{T}$ magnitude for different ranges in: %
 %($a$)
-({\it top panel}) stellar radii $R_{\star}$, and %
+({\textit top panel}) stellar radii $R_{\star}$, and %
 %($b$)
-({\it bottom panel}) impact parameters $b$. %
+({\textit bottom panel}) impact parameters $b$. %
 The recovery rates have been averaged in bins in $V_{T}$ of 0.5\,mag.%
-}
-\label{cha:human:sec:model:fig:visrecrates2}
+}\label{cha:human:sec:model:fig:visrecrates2}
 \end{center}
 \end{figure}
 
@@ -484,8 +458,7 @@ The variation of the recovery rate with stellar magnitude for different orbital 
 These plots show roughly the same trend in magnitudes, periods, impact parameters and object sizes as displayed by the BLS algorithm recovery rates.
 However, the maximum recovery rates is reduced by $\sim$20\% in each case.
 
-\section{Discussion}
-\label{cha:human:sec:discuss}
+\section{Discussion}\label{cha:human:sec:discuss}
 
 I have shown that the ability of the BLS transit-search algorithm to recover a candidate transit signal has the expected dependence on the brightness of the target star and the scatter of the photometry.
 Few of the candidates with optimal brightness and low scatter were not recovered by the algorithm.
