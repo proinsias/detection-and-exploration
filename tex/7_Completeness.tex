@@ -14,7 +14,7 @@ It was later observed to transit its star.
 In comparison, the majority of transit surveys aimed to photometrically monitor $100,\!000$s of stars for evidence of transits.
 Initial estimates \citep[see, e.g.,][]{Horne:ASP:2003a} of the yield of transiting planets from these surveys were optimistic during the initial rush of enthusiasm, with expectations of many new discoveries every month.
 At the time of writing, seven years later, there are only 20 known transiting exoplanets.
-Several transit surveys have overcome the difficulty in obtaining the photometric precision required to observe a 1\% transit over a large field of view for thousands of stars, and have proven their ability to identify transiting planets: the OGLE-III survey \citep{Udalski_Paczynski_Zebrun:acta:2002a}, the XO project \citep{McCullough_Stys_Valenti:pasp:2005a}, the HAT survey \citep{Bakos_Lazar_Papp:pasp:2002a}, the SuperWASP survey \citep{Street_Pollaco_Fitzsimmons:ASP:2003a}, and the Trans-atlantic Exoplanet Survey (TrES; \citealt{Alonso_Deeg_Brown:an:2004a, Dunham_Mandushev_Taylor:pasp:2004a, ODonovan_Charbonneau_Kotredes:AIP:2004a}).
+Several transit surveys have overcome the difficulty in obtaining the photometric precision required to observe a 1\% transit over a large field of view for thousands of stars, and have proven their ability to identify transiting planets: the OGLE-III survey \citep{Udalski_Paczynski_Zebrun:acta:2002a}, the XO project \citep{McCullough_Stys_Valenti:pasp:2005a}, the HAT survey \citep{Bakos_Lazar_Papp:pasp:2002a}, the SuperWASP survey \citep{Street_Pollaco_Fitzsimmons:ASP:2003a}, and the Trans-atlantic Exoplanet Survey (TrES;\@\citealt{Alonso_Deeg_Brown:an:2004a, Dunham_Mandushev_Taylor:pasp:2004a, ODonovan_Charbonneau_Kotredes:AIP:2004a}).
 Despite these successes, the anticipated flood of new transiting planets is still only a trickle.
 
 Over time, we have developed a greater appreciation of additional factors that must be included in our predictions \citep[see][for a review]{Gaudi:asp:2007a}:
@@ -81,7 +81,7 @@ Again, the discrete levels in the values for $R_{p}$ are due to the limit of two
 
 First I generated a list of parameters for fake transit light curves as follows.
 Note that I did not consult this parameter list until I had attempted to visually identify all of the fake candidate transiting planets.
-As part of the standard TrES analysis pipeline (\citealp[see, e.g.,][]{Dunham_Mandushev_Taylor:pasp:2004a}; \citealp{ODonovan_Charbonneau_Torres:apj:2006a}, see chapter~\ref{cha:gsc}; \citealp{ODonovan_Charbonneau_Alonso:apj:2007a}, see chapter~\ref{cha:and0}).
+As part of the standard TrES analysis pipeline (\citealp[see, e.g.,][]{Dunham_Mandushev_Taylor:pasp:2004a}; \citealp{ODonovan_Charbonneau_Torres:apj:2006a}, see chapter~\ref{cha:gsc}; \citealp{ODonovan_Charbonneau_Alonso:apj:2007a}, see chapter~\ref{cha:and0}).% chktex 9 chktex 10
 I had previously generated a list of 27,446 stars present in the Lyr1 field, ordered by instrumental $r$ magnitude.
 The position of a star in this list, starting at 0 for the brightest star, is the ``star number'' for this star.
 In order to span a wide range of transit parameters, I would need to inject a large number of fake transits.
@@ -161,10 +161,10 @@ I generated random values for $P$ ($1\leq P \leq5$\,days; again see figure~\ref{
 and $\Phi$ ($0\leq \Phi \leq 1$).
 Note that while $\Phi$ is normally defined so that $\Phi=0$ at $T_{c}$, here $\Phi$ is defined so that $\Phi=0$ at the start of the TrES observing run.
 This is to conform with the definition used by our BLS algorithm for $T_{c}$.
-I derived the transit depths from $\Delta = (R_{p}/R_{star})^{2}$, and the fractional transit durations using equation~4 from \citet{Charbonneau_Winn_Latham:apj:2006a}:
+I derived the transit depths from $\Delta = (R_{p}/R_{star})^{2}$, and the fractional transit durations using equation~4 from \citet{Charbonneau_Winn_Latham:apj:2006a}:% chktex 3
 \begin{eqnarray*} \label{cha:human:sec:model:eqn:dur}
-\sin{i} \cos{\left(\frac{\pi D}{P}\right)} & = & \sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}, \\
- i\sim90\degr \Rightarrow d & = & \frac{1}{\pi} \arccos{\left(\sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}\right)}.
+\sin{i} \cos{\left(\frac{\pi D}{P}\right)} & = & \sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}, \\% chktex 3
+ i\sim90\degr \Rightarrow d & = & \frac{1}{\pi} \arccos{\left(\sqrt{1 - \left(\frac{R_{\star}+R_{p}}{a}\right)^{2}}\right)}.% chktex 3
 \end{eqnarray*}
 Figures~\ref{cha:human:sec:model:fig:bls1} and~\ref{cha:human:sec:model:fig:bls2} shows the distribution of the parameters that should be recovered by the BLS algorithm.
 \begin{figure}
@@ -198,7 +198,7 @@ This code computes the variation with time in the amount of obscuration of a lim
 Although the TrES photometry is too noisy to discern between different limb-darkening due to different stellar spectral types, the code requires limb-darkening coefficients as part of the input.
 I assumed a quadratic limb-darkening model of the form:
 \begin{eqnarray*}\label{cha:human:sec:model:eqn:limb}
-I(\mu)/I(1) = 1-a(1-\mu)-b(1-\mu)^2,
+I(\mu)/I(1) = 1-a(1-\mu)-b(1-\mu)^2,% chktex 3
 \end{eqnarray*}
 where $\mu=\cos{\gamma}$, $\gamma$ is the angle between the line of sight and the local normal to the stellar surface, $I$ is the specific intensity, and $a$ and $b$ are the limb-darkening coefficients.
 The $R$-band quadratic limb-darkening coefficients for a G0V star (a typical spectral type from my data; see figure~\ref{cha:human:sec:model:fig:jmks}) are $a=0.2938$ and $b=0.3441$ ($T_{\mathrm eff}=6000$\,K, $\log{g}=4$, [Fe/H]=0, $V_{\mathrm turb}=0\,\kms$; \citealt{Claret:aa:2000a}).
@@ -216,7 +216,7 @@ The final product of the TrES pipeline is a series of light curves, one for each
 These light curves have been decorrelated to remove systematics suffered by wide-field transit surveys, and averaged (in 9-minute bins) to reduce the computational effort of the BLS transit search.
 For this test, I chose the combined binned TrES data set, with observations from both Sleuth%
 \footnote{See \url{http://www.astro.caltech.edu/\~ftod/tres/}.}%
-\ (Palomar Observatory, California; \citealt{ODonovan_Charbonneau_Kotredes:AIP:2004a}) and the Planet Search Survey Telescope (PSST;  Lowell Observatory, Arizona; \citealt{Dunham_Mandushev_Taylor:pasp:2004a}).
+\ (Palomar Observatory, California; \citealt{ODonovan_Charbonneau_Kotredes:AIP:2004a}) and the Planet Search Survey Telescope (PSST;\@Lowell Observatory, Arizona; \citealt{Dunham_Mandushev_Taylor:pasp:2004a}).
 Since these TrES time series and model light curves both have units of magnitudes, I added to the time series for each fake host star the corresponding model light curve to produce the fake time series.
 The light curves of the stars not chosen as fake hosts were untouched.
 Figures~\ref{cha:human:sec:model:fig:inject} shows the result of injecting the model light curve from figure~\ref{cha:human:sec:model:fig:agol} %
@@ -267,7 +267,7 @@ I then examined the candidates with $5.5 \leq \mathrm{SDE} < 8.0$ to find any re
 The lower limit here is taken to be just below the $\mathrm{SDE}=6$ limit that minimizes statistical false positives seen in \citet{Kovacs_Zucker_Mazeh:aa:2002a}.
 Beyond this point, it will be difficult to find any true transit candidate, as the transit signal will be low and there will be many spurious transit light curves with similar SDEs.
 Starting with the brightest stars, I examined each of the light curves with SDE$\geq8$, and then the light curves with $5.5<\mathrm{SDE}<8$.
-I limited my search to candidates with $0.02 \leq (P\ \mathrm{mod}\ 0.5\,\mathrm{days})\leq 0.48$ and 0.004\,mmag $\leq \Delta \leq 0.1$\,mmag.
+I limited my search to candidates with $0.02 \leq (P\ \mod\ 0.5\,\mathrm{days})\leq 0.48$ and 0.004\,mmag $\leq \Delta \leq 0.1$\,mmag.
 This limit avoids spurious detections with both integer or half-integer periods that are caused by a few bad data points within the supposed transit. Figure~\ref{cha:human:sec:model:fig:highsde} is an example of a plot of a high SDE candidate that I examined.
 
 \section{BLS and Visual-Recovery Rates}\label{cha:human:sec:recrates}
@@ -290,7 +290,7 @@ This is because a transit light curve with a negative ``depth'' is automatically
 \caption[SDE and $V_{T}$ versus period for BLS-recovered transits]{%
 ({\textit Top}) Signal Detection Efficiencies (SDEs) of the injected transit candidates plotted against their orbital period.
 The candidates marked in {\textit green} were recovered by the Box-fitting Least-Squares (BLS) algorithm; that is, the derived orbital period was accurate to within 0.1\% and the transit depth was not negative.
-{\textit Red diamonds} signify candidates not recovered by BLS.
+{\textit Red diamonds} signify candidates not recovered by BLS.\@
 BLS recovered the majority (79\%) of injected transit candidates with $\mathrm{SDE}\gsim6$.
 ({\textit Bottom}) Approximate $V_{T}$ magnitudes versus orbital period for the injected transit candidates.
 BLS recovered 62\% of candidates with $V\leq13.5$\,mag.%
@@ -405,7 +405,7 @@ Same as figure~\ref{cha:human:sec:model:fig:visrec}, but for the ratio of the tr
 \end{figure}
 
 Of the 2,612 injected transit candidates, I recovered 641 visually, compared to 1,153 recovered by the BLS algorithm.
-I have reproduced the earlier plots showing the SDEs, magnitudes, and depth-to-rms ratios of the fake candidates in figures~\ref{cha:human:sec:model:fig:visrec}, \ref{cha:human:sec:model:fig:vishistsderec}, and~\ref{cha:human:sec:model:fig:visratiorec}. I have then outlined candidates that I visually recovered with a {\textit black diamond}, and those candidates that I visually recovered, but dismissed for some reason (such as poor phase coverage at transit, or a large depth more typical of an eclipsing binary), with a {\textit blue diamond.}
+I have reproduced the earlier plots showing the SDEs, magnitudes, and depth-to-rms ratios of the fake candidates in figures~\ref{cha:human:sec:model:fig:visrec},~\ref{cha:human:sec:model:fig:vishistsderec}, and~\ref{cha:human:sec:model:fig:visratiorec}. I have then outlined candidates that I visually recovered with a {\textit black diamond}, and those candidates that I visually recovered, but dismissed for some reason (such as poor phase coverage at transit, or a large depth more typical of an eclipsing binary), with a {\textit blue diamond.}
 We can see that although I visually recovered many of the candidates, there are several candidates with large SDEs, bright magnitudes and high depth-to-rms ratios that I missed.
 I also discarded several candidates with large SDEs.
 We can also see that I recovered some of the candidates that failed my recovery test for the BLS algorithm, although I dismissed them as spurious.
@@ -469,4 +469,4 @@ In the end, one must accept the loss of some real detections to avoid being over
 I find the recovery rate of my visual analysis to be 87\% for those transit candidates that had a sufficiently high signal-to-noise ratio.
 
 I have found a mild dependence in my transit recovery rates on planetary and stellar radii and on orbital period.
-This is in contrast to the similar analysis performed by \citet{Gilliland_Brown_Guhathakurta:apjl:2000a}, who found a strong bias with the planet radius.
+This is in contrast to the similar analysis performed by \citet{Gilliland_Brown_Guhathakurta:apjl:2000a}, who found a strong bias with the planet radius.% chktex 17
