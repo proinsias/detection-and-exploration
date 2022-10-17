@@ -344,3 +344,4 @@ zerocombine
 Zieber
 Zucker
 parameterizations
+chktex
